@@ -1,0 +1,1863 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap');
+/* Menghilangkan margin dan padding pada beberapa elemen kunci */
+.html, body, ul, ol, li, form, fieldset, legend {
+    margin:0;
+    padding:0;
+    }
+      
+      
+    /* Menghapus margin top di heading dan paragraf */
+    h1, h2, h3, h4, h5, h6, p {
+    margin-top:0;
+    }
+      
+      
+    /* Menghapus border pada fieldset dan image */
+    fieldset, img {
+    border:0;
+    }
+      
+    /* Mengatur border dan spacing tabel */
+    table {
+    border-collapse:collapse;
+    border-spacing:0;
+    }
+      
+      
+    /* Mengatur caption, header tabel dan data cell tabel */
+    caption, th, td {
+    text-align:left;
+    vertical-align:top;
+    font-weight:normal;
+    }
+      
+      
+    /* Memberikan warna pada fieldset (Mengatasi masalah warna pada IE) */
+    legend {
+    color:#000;
+    }
+      
+      
+    /* Mengatur ukuran font dan ketinggian paragraf pada input, textarea dan select */
+    input, textarea, select {
+    font-size:110%;
+    }
+      
+    /* Menghilangkan list bullet*/
+    li {
+    list-style:none;
+    }
+      
+      
+    /* Mengatur border-bottom dan cursor pada abbr dan acronym */
+    abbr, acronym {
+    border-bottom:.1em dotted;
+    cursor:help;
+    }
+      
+    /* Mengatur vertical-align pada sup dan sub */
+    sup {
+    vertical-align:text-top;
+    }
+      
+    sub {
+    vertical-align:text-bottom;
+    }
+body {
+    background:linear-gradient(to top,#0f3462,#09203d, #07182d);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Galaxy header style */
+.galaxy-header {
+    background-color:#233954;
+    background-size: cover;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+
+.left-section {
+    display: flex; 
+    align-items: center;
+    /*marginleft50px*/
+}
+
+/* Logo styles */
+.logo img {
+    max-width: 90px; 
+    height: auto;
+    padding-right: 20px;
+}
+
+.navbar-phone{
+    display: none;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+   
+}
+
+.navbar li {
+    margin-right: 50px;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.navbar a {
+	padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.2s ease-in-out; 
+}
+
+.navbar a:hover {
+    color: #f7941d; 
+}
+
+.sign-in-button {
+    background-color: transparent;
+	font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    margin-right: 30px;
+}
+
+.sign-in-button:hover {
+    background-color:#f7941d;
+	border: none;
+    color:black; /* Change color on hover */
+}
+
+.category-menu{
+	position: relative;
+  	display: inline-block;
+}
+
+.menu-icon {
+    font-size: 15px;
+	transition: color 0.2s ease-in-out; 
+    margin-left: 5px; 
+}
+
+.dropdown-content {
+	margin-top: 5px;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+.dropdown-content a {
+	color: black;
+	text-align: left;
+	font-size: 11px;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+.dropdown-content a:hover {
+	background-color:#f7941d;
+	color: white;
+}
+
+.category-menu:hover .dropdown-content {
+	display: block;
+}
+
+.category-menu:hover{
+	color:#f7941d;
+}
+
+/*Index*/
+.home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("img/bg-english.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-home .content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.main-home .content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.main-home .content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.main-home .content .home-btn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.main-home .content .home-btn:hover{
+    background-color: #b35c14d7;
+}
+
+.main-home .content .home-btn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
+
+.item{
+    border-radius: 15px;
+    width:390px;
+    height:500px;
+    background-image: linear-gradient(to top, #AEC0CE, #ECECF2);
+    overflow: hidden;
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;
+}
+.item .avatar{
+    display: block;
+    margin:50px auto 10px;
+    width:150px;
+    height:150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px #7e878d;
+}
+.item .content{
+    width: 200px;
+    padding:30px;
+    font-size: 15px;
+    color:#000;
+}
+
+.item .content table th{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #AEC0CE;
+}
+
+.item .content table td{
+    padding:10px 0;
+    border-bottom: 1px solid #AEC0CE;
+}
+
+.item .content table td a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.item .content table td a:hover{
+    color:#0F4ED8;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.item .content table td:nth-child(2){
+    text-align: right;
+}
+.item .nameGroup{
+    text-align: center;
+    border-bottom:none!important;
+}
+#list{
+    display: flex;
+}
+#formList{
+    width:1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin:100px auto 50px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar{
+    display: none;
+}
+/*Blog*/
+
+.judul{
+    margin: 50px 0;
+}
+
+.judul h1{
+    text-align: center;
+    color:#f7941d;
+    text-transform: uppercase;
+}
+.judul h2{
+    text-align: left;
+    margin-left: 50px;
+    color:white;
+}
+.judul h3{
+    margin-left:50px;
+    color: white;
+    font-size: 20px;
+}
+
+.caption{
+    color:white;
+    position:absolute;
+    font-weight: bold;
+    bottom: 10px;
+    padding-left: 10px;
+    font-size: 24px;
+    width:75%;
+    text-shadow: 2px 2px #09203d;
+}
+.top-section {
+    position:relative;
+    display: flex;
+    gap: 38px;
+    margin-left: 30px;
+    margin-right: auto ;
+}
+
+.left-section {
+    position: relative;
+   
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    gap: 38px;
+}
+.right-image {
+    position: relative;
+    flex: 1;
+}
+
+/* CSS untuk mengatur gambar */
+.top-section img{
+    border-radius: 5px;
+}
+.right-image img{
+    width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+
+.left-section img{
+    
+    cursor: pointer;
+}
+
+.blog-content{
+    display: flex;
+    margin: 30px 50px;
+}
+
+.blog-image{
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.blog-description{
+    display: flex;
+    flex-direction:column;
+    margin-left: 20px;
+    color: white;
+}
+
+.blog-caption{
+    margin: 0;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.blog-caption:hover{
+    color:#f7941d;
+}
+.blog-author{
+    font-size: 18px;
+    color:#f7941d;
+    font-weight: bold;
+}
+
+.blog-date{
+    margin: 0;
+}
+
+.bottom-section a{
+  
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+/*Article*/
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 200px;
+}
+.maincontainer h1{
+    color:#f7941d;
+}
+/* Gaya untuk gambar */
+.center-image {
+    text-align: center;
+}
+    
+.center-image img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc; /* Jika Anda ingin menambahkan garis tepi pada gambar */
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.maincontainer p{
+    color: white;
+    text-align: justify;
+}
+
+.maincontainer .author{
+    color: white;
+    margin-top: 0;
+}
+
+.maincontainer .changepage{
+    margin-top: 50px;
+}
+
+.maincontainer .changepage a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.maincontainer .changepage a:hover{
+    text-decoration: none;
+    color:#F7941D;
+}
+/*About Us*/
+
+.introduction{
+    margin: 0 50px;
+    padding: 20px 0;
+    border-bottom: white 1px solid;
+}
+.introduction h1{
+    text-align: center;
+    color:#f7941d;
+}
+
+.introduction p{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.content{
+    margin-top: 50px;
+    border-bottom: white solid 1px;
+    margin: 0 20px;
+    padding: 50px 0;
+}
+
+.mission{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.vision-caption{
+    margin: 0 50px;
+}
+
+.content h2{
+    text-align: left;
+    color:#f7941d;
+    font-size: 30px;
+}
+
+.content p{
+    color: white;
+    font-size: 19px;
+}
+
+.content img{
+    width: 300px;
+    height: auto;
+}
+
+.vision{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+h2{
+    text-align: center;
+    color:#f7941d;
+    font-size: 30px;
+}
+
+/* profile */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-card {
+    width: 200px;
+    height: 210px;
+    text-align: center;
+    background-color:#3b597ec9;
+    color: white;
+    padding: 10px 10px;
+    box-shadow: 5px 5px 10px rgb(95, 133, 148);
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.profile-picture img {
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+ 
+    display: block;
+    margin-bottom: 15px;
+    object-fit: cover;
+    object-position: 100% 25%;
+}
+
+/*Category*/
+.banner_container{
+    display: flex;
+    justify-content: center;
+}
+.main-category .content{
+    margin: 0 200px;
+    text-align:justify;
+}   
+
+.main-category h3{
+    color:#f7941d;
+}
+
+.change-page{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.change-page a{
+    text-decoration: none;
+    color: white;
+}
+
+.change-page a:hover{
+    color:#f7941d;
+}
+iframe {
+    width: 550px;
+    height: 300px;
+}
+/*Career*/
+.col-6 {width: 50%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  
+}
+@keyframes shine {
+    0% {
+      text-shadow: 0 0 10px rgba(229, 86, 14, 0.8);
+    }
+    50% {
+      text-shadow: 0 0 20px rgb(233, 67, 11);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(231, 141, 6, 0.892);
+    }
+  }
+
+  #textbersinar {
+    color: orangered;
+    animation: shine 2s infinite; /* Menggunakan animasi shine selama 2 detik secara terus-menerus */
+  }
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+
+  .right , .left{
+    justify-content: center !important;
+  }
+  #text2{
+    margin-top: 0 !important;
+  
+  }
+}
+
+:root{
+  --blue:#122A46;
+}
+
+
+.titleContent{
+  & span{
+    color: #F7941D;
+  }
+  & h2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+  }
+}
+
+.border{
+  border: 1px solid black;
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+
+.left{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.card{
+  width: 554px;
+  margin: 0 10px;
+  margin-top: 20px;
+  height: 384px;
+  border-radius: 20px;
+  background-color: white;
+} 
+
+.imgWrap{
+  text-align: center;
+  margin-top: 5%;
+}
+
+#text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  font-size: 24px;
+  margin-top: -5px;
+}
+
+#text2{
+  text-align: center;
+  padding: 0 30px;
+  font-size: 20px;
+  margin-top: 95px;
+  color: #847D7D;
+
+}
+
+.warnatext{
+  color: #F7941D;
+}
+
+/*tipsntrick*/
+.main-tips{
+    margin: 0 50px;
+}
+
+.left_content a{
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.left_content a:hover{
+    text-decoration: none;
+    opacity: 50%;
+    transition: 0.3s ease;
+}
+
+.main-tips h2{
+    margin: 0;
+}
+
+.main-tips h3{
+    color: white;
+    text-shadow: 3px 3px blue;
+}
+
+.main-tips .text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 2px;
+    box-shadow: 50px 10px #258cf4;
+    margin: 100px 100px;
+    margin-top: 0;
+    padding: 30px;
+    text-align: justify;
+    background: #0F4ED8;
+}
+
+.main-tips .text p{
+    color:white;
+    font-size: 20px;
+    padding: 0 40px;
+}
+
+.main-tips p{
+    color: white;
+    margin-left: 20px;
+}
+
+.tips img{
+    width: 160px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 20px;
+} 
+
+.tips{
+    margin: 20px 0;
+    background-color:rgba(255, 255, 255, 0.5);
+    display: flex;
+    border-radius: 5px;
+}
+
+.keterangan{
+    margin-right: 20px;
+}
+.keterangan p {
+    text-align: justify;
+}
+
+.banner-caption{
+    color: white;
+    font-size: 20px;
+}
+
+.main-tips tr{
+    margin-top: 20px;
+}
+
+.main-tips th{
+    background-color: #F7941D;
+}
+.main-tips tr td{
+    text-align: justify;
+    background-color:	#ffffff;
+}   
+.main-tips table{
+    margin-bottom: 30px;
+}
+
+.main-tips .content{
+    text-align: justify;
+    background-color:rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.main-tips .content p{
+    color: black;
+}
+
+.column{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.column img{
+    border-radius: 5px;
+}
+
+.movie_content img{
+   
+    float: left;
+    border-radius: 5px;
+}
+
+.movie_content{
+    display: flex;
+    font-family: cursive;
+    text-align: justify;
+    gap: 20px;
+}
+
+
+.content h4{
+    color:white;
+}
+@keyframes shine {
+    0% {
+      text-shadow: 0 0 10px rgba(241, 234, 230, 0.8);
+    }
+    50% {
+      text-shadow: 0 0 20px rgb(239, 210, 200);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(222, 207, 185, 0.892);
+    }
+  }
+
+  #gantiwarna {
+    color: white;
+    animation: shine 2s infinite; /* Menggunakan animasi shine selama 2 detik secara terus-menerus */
+  }
+
+   
+
+
+/*login/register*/
+.log{
+    background-image: url("img/bgimage.png");
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.login{
+    width: 320px;
+    height: 460px;
+    top: 50%;
+    left: 50%;
+    padding: 50px 30px;
+    background: #fff;
+    color: #000;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.login .avatar {
+    width: 80px;
+    height: 80px;
+    top: -10%;
+    left: calc(50% - 40px);
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.login h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.login p{
+    font-weight: bold;
+}
+
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-input{
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color:black;
+}
+
+.login .btn{
+    height: 38px;
+    text-decoration: none;
+    background: #f7941d;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.5s ease;
+}
+
+.login .btn:hover {
+    cursor: pointer;
+    background: #ff4500
+}
+
+.login a{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.register-link{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a{
+    font-size: 15px;
+    color:#F7941D;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.register-link a{
+    text-decoration: none;
+    color: rgb(5, 5, 191);
+    font-weight: bold;
+}
+
+.register-link p a:hover{
+    transition: 0.3s ease;
+    color: blue;
+}
+
+.login .input-group input{
+    height: 35px;
+    width: 270px;
+    box-sizing: border-box;
+    font-size: 10px;
+    border-radius: 10px;
+    background-color: #eae5e5;
+    color: black;
+}
+
+/*FAQ*/
+.faq-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Styling untuk FAQ Title */
+.faq-title {
+    color:#F7941D;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk FAQ Item */
+.faq-item {
+    margin-bottom: 20px;
+}
+
+/* Styling untuk Pertanyaan (Question) */
+.question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+/* Styling untuk Tanda Plus/Minus */
+.toggle {
+    font-size: 24px;
+}
+
+/* Styling untuk Jawaban (Answer) */
+.answer {
+    max-height: 0;
+    transition: max-height 0.1s ease;
+    overflow: hidden;
+    color: transparent;
+    border: 1px solid #ccc;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #fff;
+}
+
+/* Styling untuk Jawaban yang Ditampilkan */
+.answer.show {
+    max-height: 500px;
+    transition: max-height 0.5s ease;
+    padding: 20px;
+    color: black;
+}
+
+
+ /*footer*/
+
+ footer{
+    margin-top: 50px;
+ }
+.footer-first {
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: center;
+  	align-content: flex-start;
+	background-color:#233954;
+	color: #fff;
+    padding: 30px 0;
+    width: 100%;
+  }
+  
+  
+  .footer-column {
+	margin: 0 100px;
+  }
+  
+  .galaxy-footer h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color:#f7941d;
+  }
+  
+  .galaxy-footer ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .galaxy-footer ul li {
+	margin-bottom: 8px;
+  }
+
+  ul li a{
+	font-size: 14px;
+  }
+  
+  .galaxy-footer ul li a {
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s ease;
+  }
+  
+  .galaxy-footer ul li a:hover {
+	color:#aeb3ba; /* Change color on hover */
+  }
+  
+  .social-icons {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin-top: 10px;
+  }
+  
+  .social-icons li {
+	margin-right: 10px;
+  }
+  
+  .social-icons a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	transition: color 0.3s ease;
+  }
+
+  .footer-second{
+	text-align: center;
+	background-color:#0f1823;
+	color: #fff;
+	padding: 30px;
+  }
+/*rsponsive untuk navigasi*/
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .navbar li {
+        margin-right: 0.75rem;
+    }
+
+    .sign-in-button {
+        padding: 10px;
+        margin-right: 0.75rem;
+    }
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 599px) {
+    .left-section {
+        margin-left: 0.5rem;
+    }
+
+    .logo img {
+        max-width: 5rem;
+        padding-right: 0.5rem;
+    }
+
+    .navbar li {
+        margin-right: 0.5rem;
+    }
+
+    .sign-in-button {
+        padding: 10px;
+        margin-right: 0.5rem;
+        display: block; /* Adjusted for mobile screens */
+        width: 100%; /* Make the button take full width */
+        margin-top: 1rem; /* Add some top margin for better spacing */
+    }
+}
+
+/* Media query for laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .left-section {
+        margin-left: 1.5rem; /* Adjusted for medium-sized screens */
+    }
+
+    .logo img {
+        max-width: 8rem; /* Adjusted for medium-sized screens */
+        padding-right: 1.5rem; /* Adjusted for medium-sized screens */
+    }
+
+    .navbar li {
+        margin-right: 1.5rem; /* Adjusted for medium-sized screens */
+    }
+
+    .sign-in-button {
+        padding: 1.25rem 2rem; /* Adjusted for medium-sized screens */
+        margin-right: 2rem; /* Adjusted for medium-sized screens */
+    }
+
+    /* Additional style for larger screens */
+    .sign-in-button {
+        display: block; /* Changed to block for larger screens */
+        width: 100%; /* Make the button take full width */
+        margin-right: 0; /* Remove margin for larger screens */
+    }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 1440px) {
+    .left-section {
+        margin-left: 2rem;
+    }
+
+    .logo img {
+        max-width: 9rem;
+        padding-right: 2rem;
+    }
+
+    .navbar li {
+        margin-right: 2rem;
+    }
+
+    .sign-in-button {
+      display: inline-block;
+    }
+}
+@media only screen and (max-width: 399px) {
+    .left-section {
+        margin-left: 0.5rem;
+    }
+
+    .logo img {
+        max-width: 4rem;
+        padding-right: 0.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+        margin-right: 0;
+    }
+    .navbar ul {
+        display: none;
+        list-style: none;
+        margin-left: 20px;
+        margin-right: 11px;
+    }
+
+    .sign-in-button {
+        padding: 10px;
+        margin-right: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+/* Media query for small screens */
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+    .left-section {
+        margin-left: 0.75rem;
+    }
+
+    .logo img {
+        max-width: 4.5rem;
+        padding-right: 0.75rem;
+    }
+
+    .navbar li {
+        margin-right: 0.5rem;
+        margin-top: 4px;
+        margin-bottom: 2px;
+    }
+
+    .sign-in-button {
+        padding: 1.25rem 1.5rem;
+        margin-right: 0.5rem;
+    }
+    .navbar ul {
+        display: block;
+        margin-left:50px;
+        list-style: none;
+        display: none;
+    }
+}
+/* Media query untuk layar berukuran 600px - 799px */
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .left-section {
+        margin-left: 1rem;
+    }
+
+    .logo img {
+        max-width: 6rem;
+        padding-right: 1rem;
+    }
+
+    .navbar {
+        /* Aturan khusus untuk navbar pada lebar layar tertentu */
+    }
+
+    .navbar ul {
+        display:flex; /* Menyusun menu ke kiri */
+    }
+
+    .navbar li {
+        margin: 0.5rem 0; /* Margin atas dan bawah */
+        margin-right: 0; /* Reset margin kanan */
+    }
+
+    .sign-in-button {
+        padding: 1rem 1.5rem;
+        margin-right: 0.75rem;
+    }
+
+    /* Aturan tambahan untuk elemen-elemen lain yang perlu disesuaikan */
+    .additional-element {
+        /* Sesuaikan aturan tambahan lainnya */
+    }
+
+    /* Contoh aturan tambahan untuk menyembunyikan elemen tertentu */
+    .hidden-element {
+        display: none;
+    }
+}
+
+/* Media query for tablets */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .navbar li {
+        margin-right: 0.75rem;
+    }
+
+    .sign-in-button {
+        padding: 1rem 1.5rem;
+        margin-right: 0.75rem;
+        display: none;
+    }
+}
+
+/* Media query for mobile screens */
+@media only screen and (min-width: 320px) and (max-width: 399px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+        margin-right: 0;
+    }
+
+    .sign-in-button {
+        padding: 1rem;
+        margin-right: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+/* Media query for laptops */
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .left-section {
+        margin-left: 1.5rem; /* Adjusted for medium-sized screens */
+    }
+
+    .logo img {
+        max-width: 8rem; /* Adjusted for medium-sized screens */
+        padding-right: 1.5rem; /* Adjusted for medium-sized screens */
+    }
+
+    .navbar li {
+        margin-right: 1.5rem; /* Adjusted for medium-sized screens */
+    }
+
+    .sign-in-button {
+        padding: 1.25rem 2rem; /* Adjusted for medium-sized screens */
+        margin-right: 2rem; /* Adjusted for medium-sized screens */
+    }
+
+    /* Additional style for larger screens */
+    .sign-in-button {
+        display: block; /* Changed to block for larger screens */
+        width: 100%; /* Make the button take full width */
+        margin-right: 0; /* Remove margin for larger screens */
+    }
+}
+/* Media query for larger screens */
+@media only screen and (min-width: 1440px) {
+    .left-section {
+        margin-left: 2rem;
+    }
+
+    .logo img {
+        max-width: 9rem;
+        padding-right: 2rem;
+    }
+
+    .navbar li {
+        margin-right: 2rem;
+    }
+
+    .sign-in-button {
+        padding: 1.5rem 2.5rem;
+        margin-right: 3rem;
+    }
+}
+ /*responsif untuk home*/
+ @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    
+    .main-home .content {
+        width: 80%; 
+    }
+
+    .main-home .content h1 {
+        font-size: 40px; 
+        margin-top: 7%; 
+    }
+
+    .main-home .content .home-btn {
+        width: 120px; 
+        height: 30px; 
+        font-size: 16px; 
+        margin-bottom: 8px; 
+        margin-left: 15px; 
+    }
+   
+}
+@media only screen and (min-width: 768px)  {
+    .main-home .content {
+        width: 70%;
+    }
+
+    .main-home .content h1 {
+        font-size: 45px; 
+        margin-top: 8%; 
+    }
+
+    .main-home .content .home-btn {
+        width: 140px; 
+        height: 35px; 
+        font-size: 17px; 
+        margin-bottom: 10px; 
+        margin-left: 18px; 
+    }
+    
+}
+/* Media query for mobile screens */
+@media only screen and (max-width: 599px) {
+    .main-home .content {
+        width: 90%; 
+    }
+
+    .main-home .content h1 {
+        font-size: 30px; 
+        margin-top: 5%; 
+    }
+
+    .main-home .content .home-btn {
+        width: 100%; 
+        height: 40px; 
+        font-size: 14px; 
+        margin-bottom: 8px; 
+        margin-left: 0; 
+    }
+}
+
+/*responsif untuk form*/
+@media only screen and (max-width: 599px) {
+    .item {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+/* Media query for medium screens */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .item {
+        width: 45%;
+    }
+}
+
+/* Media query for large screens */
+@media only screen and (min-width: 1025px) {}
+    .item {
+        width: 30%;
+    }
+    
+/*responsif untuk footer*/
+    @media (max-width: 768px) {
+        .footer-column {
+            margin: 0 20px;
+        }
+    
+        .galaxy-footer h3 {
+            font-size: 16px; 
+        }
+    
+        ul li a {
+            font-size: 12px; 
+        }
+    
+        .social-icons a {
+            font-size: 20px; 
+        }
+    }
+    
+    /* Media Queries for Mobile Phones */
+    @media (max-width: 480px) {
+        .footer-column {
+            margin: 0 10px; 
+        }
+    
+        .galaxy-footer h3 {
+            font-size: 14px; 
+        }
+    
+        ul li a {
+            font-size: 10px; 
+        }
+    
+        .social-icons a {
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 768px) {
+        .maincontainer {
+            margin: 0 20px; 
+        }
+    
+        .center-image img {
+            width: 100%; 
+            max-width: none;
+        }
+    }
+
+/*responsif untuk artikel*/
+
+    /* Media Queries for Mobile Phones */
+    @media (max-width: 480px) {
+        .maincontainer {
+            margin: 0 10px; 
+        }
+    
+        .maincontainer h1 {
+            font-size: 24px; 
+        }
+    
+        .center-image img {
+            width: 100%; 
+            max-width: none;
+        }
+    
+        .maincontainer p {
+            font-size: 14px;
+        }
+    
+        .maincontainer .changepage {
+            margin-top: 30px; 
+        }
+    
+        .maincontainer .changepage a {
+            font-size: 16px; 
+        }
+    }   
+
+/*untuk responsif blog*/
+@media (max-width: 768px) {
+    .judul h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .judul h3 {
+        margin-left: 0;
+    }
+
+    .top-section {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .right-section {
+        margin-right: 0;
+        gap: 20px;
+    }
+
+    .blog-content {
+        margin: 20px;
+    }
+
+    .blog-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-description {
+        margin-left: 0;
+    }
+
+    .caption {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        bottom: 0;
+        padding: 10px 0;
+    }
+
+    .blog-caption {
+        font-size: 20px;
+    }
+
+    .blog-author {
+        font-size: 16px;
+    }
+    .bottom-section {
+        margin: 3px;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .top-section {
+        gap: 30px;
+    }
+
+    .right-section {
+        margin-right: 0;
+        gap: 30px;
+    }
+
+    .blog-content {
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blog-image {
+        width: 350px;
+        height: 200px;
+    }
+
+    .blog-description {
+        margin-left: 20px;
+    }
+}
+
+    
+    /* Tampilan untuk layar ponsel */
+    @media screen and (max-width: 768px) {
+        .blog-content {
+            margin: 20px;
+            flex-direction: column;
+        }
+    
+        .blog-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    
+        .blog-description {
+            margin-left: 0;
+        }
+    }   
+
+
+
+/* Tampilan untuk layar ponsel */
+
+
+
+
+
+
+
+
+/*responsive untuk about us*/
+@media only screen and (min-width: 1024px) {
+    .introduction {
+        margin: 0 50px;
+    }
+
+    .introduction p {
+        padding: 0 100px;
+    }
+
+    .mission,
+    .vision {
+        padding: 0 200px;
+    }
+
+    .vision-caption {
+        margin: 0 50px;
+    }
+}
+
+/* Media Queries for Tablet (768px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .introduction {
+        margin: 0 30px;
+    }
+
+    .introduction p {
+        padding: 0 50px;
+    }
+
+    .mission,
+    .vision {
+        padding: 0 100px;
+    }
+
+    .vision-caption {
+        margin: 0 30px;
+    }
+}
+
+/* Media Queries for Mobile (480px) */
+@media only screen and (max-width: 479px) {
+    .introduction {
+        margin: 0 10px;
+    }
+
+    .introduction p {
+        padding: 0 10px;
+    }
+
+    .mission,
+    .vision {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .vision-caption {
+        margin: 0 10px;
+    }
+    
+}
+/*responsif untuk category*/
+@media (max-width: 768px) {
+    .main-category h2 {
+        margin: 0 20px; /* Adjust margins for smaller screens */
+    }
+
+    .banner_container img {
+        width: 70%; /* Adjust image width for tablets */
+        margin: 0 auto; /* Center-align the image */
+    }
+
+    .main-category .content {
+        margin: 0 20px; /* Adjust margins for smaller screens */
+    }
+
+    .change-page {
+        flex-direction: column; /* Stack links vertically for tablets */
+        align-items: center; /* Center-align links */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-category h2 {
+        margin: 0 10px; /* Adjust margins for smaller screens */
+    }
+
+    .banner_container img {
+        width: 70%; /* Adjust image width for mobile phones */
+    }
+
+    .main-category .content {
+        margin: 0 10px; /* Adjust margins for smaller screens */
+    }
+
+    .change-page {
+        flex-direction: column; /* Stack links vertically for mobile phones */
+        align-items: center; /* Center-align links */
+    }
+}
+/*responsive untuk tips&trik*/
+/*for tablet*/
+@media (max-width: 768px) {
+    .main-tips .text {
+        margin: 20px; 
+        padding: 20px; 
+    }
+
+    .main-tips .text p {
+        font-size: 18px; 
+    }
+
+    .tips img {
+        width: 100px; /* Adjust image size for smaller screens */
+        margin-right: 10px; 
+    }
+
+    .column {
+        gap: 10px; 
+    }
+
+    .column img {
+        max-width: 100%;
+    }
+
+    .movie_content {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+
+    .movie_content img {
+        float: none; /* Clear the float for smaller screens */
+        max-width: 100%;
+    }
+}
+
+/* Media Queries for Mobile Phones */
+@media (max-width: 480px) {
+    .main-tips {
+        margin: 0 10px; 
+    }
+
+    .main-tips h3 {
+        font-size: 24px; 
+    }
+
+    .main-tips .text {
+        margin: 10px; 
+        padding: 10px; 
+    }
+
+    .main-tips .text p {
+        font-size: 16px;
+    }
+
+    .tips img {
+        width: 80px; /* menyesuaikan ukuran gambar dilayar kecil */
+        margin-right: 10px; 
+    }
+
+    .column {
+        gap: 10px; /* menambahkan space di layarkecil */
+    }
+
+    .column img {
+        max-width: 100%;
+    }
+
+    .movie_content {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+
+    .movie_content img {
+        float: none; /* Clear the float for smaller screens */
+        max-width: 100%;
+    }
+}
+
+ 
